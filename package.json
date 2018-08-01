@@ -1,0 +1,17 @@
+{
+  "name": "dmc",
+  "version": "0.0.1",
+  "description": "node bindings for dual marching cubes by planaria",
+  "author": "Calebsem <penguzine@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "install": "./configure.sh",
+    "build": "cmake-js build --CDEigen3_DIR=\"eigen/bin/share/eigen3/cmake\""
+  },
+  "dependencies": {
+    "bindings": "^1.3.0",
+    "boost-lib": "^0.11.3",
+    "cmake-js": "^3.7.3",
+    "nan": "^2.10.0"
+  }
+}
