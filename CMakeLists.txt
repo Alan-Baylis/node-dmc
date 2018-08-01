@@ -4,7 +4,7 @@ set(PROJECT_NAME dmc)
 project(${PROJECT_NAME})
 
 # Include BoostLib module
-SET(CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH};${CMAKE_CURRENT_SOURCE_DIR}/node_modules/boost-lib/cmake")
+SET(CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH};${CMAKE_CURRENT_SOURCE_DIR}/../boost-lib/cmake")
 include(BoostLib)
 
 require_boost_libs(">= 1.64.0" utility)
