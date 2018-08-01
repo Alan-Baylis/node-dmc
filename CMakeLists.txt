@@ -4,13 +4,10 @@ set(PROJECT_NAME dmc)
 project(${PROJECT_NAME})
 
 # Include BoostLib module
-file(GLOB_RECURSE boostlib_cmake_path "${CMAKE_CURRENT_SOURCE_DIR}/node_modules" "BoostLib.cmake")
-list(GET boostlib_cmake_path 0 boostlib_cmake_path)
-get_filename_component(boostlib_cmake_path "${boostlib_cmake_path}" DIRECTORY)
-SET(CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH};${boostlib_cmake_path}")
+SET(CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH};${CMAKE_CURRENT_SOURCE_DIR}/node_modules/boost-lib/cmake")
 include(BoostLib)
 
-message (STATUS ${Eigen3_DIR})
+require_boost_libs(">= 1.64.0" utility)
 
 include_directories(${Boost_INCLUDE_DIRS})
 

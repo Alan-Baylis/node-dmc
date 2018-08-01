@@ -1,4 +1,4 @@
-const dmc = require('./build/Release/dmc');
+const dmc = require('./');
 
 const voxels = dmc.getTestTriangles();
 

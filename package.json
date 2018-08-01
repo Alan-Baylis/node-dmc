@@ -4,6 +4,7 @@
   "description": "node bindings for dual marching cubes by planaria",
   "author": "Calebsem <penguzine@gmail.com>",
   "license": "MIT",
+  "main": "index.js",
   "scripts": {
     "install": "./configure.sh",
     "build": "cmake-js build --CDEigen3_DIR=\"eigen/bin/share/eigen3/cmake\""
